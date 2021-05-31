@@ -38,7 +38,7 @@ else {
   };
   
   
-  return loginFunction = axios(loginConfig)
+  loginFunction = axios(loginConfig)
   .then(function (loginResponse) {
     console.log(JSON.stringify(loginResponse.data));
     return loginResponse.data.token;
